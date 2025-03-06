@@ -93,7 +93,8 @@
 
 .produtos li button {
     display: block;
-    width: 100%;
+    max-width: 300px;
+    width: 80%;
     padding: 8px 0;
     border: none;
     background-color: #119759;
@@ -103,6 +104,7 @@
     font-style: italic;
     cursor: pointer;
     border-radius: 6px;
+    margin-left: 30px;
     }
 
 
@@ -113,5 +115,130 @@
 
 
 
+    ul li img{
+        width: 300px;
+        height: 300px;
+    }
 
 
+    ul li h3{
+        height: 50px;
+        max-width: 300px;
+        width: 80%;
+        font-size:16px;
+        padding-left: 30px;
+    }
+
+
+    ul li p,.price{
+        margin-left: 30px;
+    }
+
+
+    @media screen and (max-width: 767px){
+        .container{
+            max-width:90%;
+        }
+
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(39, 104, 54);
+            color: white;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        .menu button {
+            border: none;
+            background-color: transparent;
+            color: white;
+            padding: 0 10px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+
+        
+        .sobre{
+            display: block;
+            align-items: center; 
+            padding: 16px 0;
+            border-bottom: 2px solid rgb(39, 104, 54);
+            text-align: center;
+            
+        }
+
+        .sobre h2,p{
+            text-align: center;
+        }
+        .sobre h2{
+            margin-top: 15px;
+        }
+        .sobre p{
+            padding: 5px 30px;
+        }
+
+        
+        .produtos h2{
+            text-align: center;
+        }
+        .produtos ul{
+            display:block;
+            margin-top: 16px;
+            max-width: 640px;
+            width: 100%;
+        }
+
+        ul li img{
+            width: 300px;
+            height: 300px;
+            margin-left: 30px;
+        }
+ }
+
+
+        @media screen and (min-width: 768px)  and (max-width: 1023px) {
+            .container{
+                max-width:90%;
+            }
+
+            .sobre{
+                display: block;
+                align-items: center; 
+                padding: 16px 0;
+                border-bottom: 2px solid rgb(39, 104, 54);
+                text-align: center;
+                
+            }
+
+            .sobre h2{
+                margin-top: 15px;
+            }
+
+            .sobre p{
+                padding: 5px 30px;
+            }
+
+            
+            .produtos{
+                grid-template-columns: repeat(2,49%);
+            }
+            .produtos ul{
+                display:block;
+                margin-top: 16px;
+                max-width: 640px;
+                width: 100%;
+            }
+
+            .produtos h2{
+                text-align: center;
+            }
+
+            ul li img{
+                width: 300px;
+                height: 300px;
+                margin-left: 30px;
+            }
+        }
