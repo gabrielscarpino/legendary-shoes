@@ -162,17 +162,14 @@
 
         
         .sobre{
-            display: block;
-            align-items: center; 
-            padding: 16px 0;
-            border-bottom: 2px solid rgb(39, 104, 54);
             text-align: center;
-            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: 2px solid rgb(39, 104, 54);
         }
 
-        .sobre h2,p{
-            text-align: center;
-        }
+
         .sobre h2{
             margin-top: 15px;
         }
@@ -194,7 +191,13 @@
         ul li img{
             width: 300px;
             height: 300px;
-            margin-left: 30px;
+        }
+
+        ul li{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
  }
 
@@ -221,15 +224,18 @@
                 padding: 5px 30px;
             }
 
+
+
+
             
-            .produtos{
-                grid-template-columns: repeat(2,49%);
-            }
             .produtos ul{
-                display:block;
+                display:grid;
                 margin-top: 16px;
                 max-width: 640px;
                 width: 100%;
+                grid-template-columns: repeat(2,49%);
+                column-gap: 5%;
+                row-gap: 5%;
             }
 
             .produtos h2{
